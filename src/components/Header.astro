@@ -1,0 +1,52 @@
+---
+// interface Props {
+// 	title: string;
+// }
+
+// const { title } = Astro.props;
+---
+
+<style>
+    .link-tab {
+        margin: 10px;
+    }
+
+    .link-tab > a {
+        color: black;
+        transition: 0.3s;
+        font-size: large;
+        padding: 10px;
+    }
+
+    .link-tab:hover > a {
+        background-color: gray;
+        color: white;
+    }
+
+    .container {
+        padding-top: 5px;
+        padding-bottom: 10px;
+        /* box-shadow: 0px 1px 5px rgb(61, 61, 77); */
+    }
+
+    hr {
+        border-color: black;
+    }
+
+</style>
+
+
+<center class="container">
+    <h1>On The Topic Of</h1>
+    <span class="link-tab">
+        <a href="/"> Home </a>
+    </span>
+    
+    <span class="link-tab">
+        <a href="/about"> About </a>
+    </span>
+</center>
+
+<hr>
+
+
