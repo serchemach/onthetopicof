@@ -19,24 +19,14 @@ const { Content } = await entry.render();
     display: flex;
     flex-direction: column;
     align-items: center;
-    word-break: break-all;
-  }
-
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .title {
-    align-self: center;
+    word-wrap: break-word;
   }
 </style>
 
 <Layout>
 	<div class="content-container">
-    <div class="content" style="width: 90%">
-      <div class="title">
+    <div style="width: 90%">
+      <div>
         <h2>{entry.data.title}</h2>
       </div>
       <Content />
