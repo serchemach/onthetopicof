@@ -32,7 +32,7 @@ const allBlogPosts = await getCollection('blog');
 		{
 			allBlogPosts.map(blogPostEntry => (
 			<div class="link-tab">
-				<a href={`/blog/${blogPostEntry.slug}`}>{blogPostEntry.data.title}</a>
+				<a href={`./blog/${blogPostEntry.slug}`}>{blogPostEntry.data.title}</a>
 			</div>
 			))
 		}
