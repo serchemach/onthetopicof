@@ -16,6 +16,7 @@ allBlogPosts.sort((a, b) => b.data.date - a.data.date);
     .link-tab {
         margin: 5px;
         width: fit-content;
+        max-width: 70%;
         transition: 0.3s;
         padding: 10px;
     }
@@ -33,6 +34,24 @@ allBlogPosts.sort((a, b) => b.data.date - a.data.date);
         color: white;
     }
 
+    .tab-holder {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+
+    .link-side {
+        background-color: white;
+        height: 3px;
+        flex-grow: 1;
+    }
+
+    .link-tab:hover + .link-side,
+    .link-side:has(+ .link-tab:hover) {
+        background-color: gray;
+    }
+
 </style>
 
 <Layout>
@@ -40,9 +59,17 @@ allBlogPosts.sort((a, b) => b.data.date - a.data.date);
 		<h2> The list of currently available articles: </h2>
 		{
 			allBlogPosts.map(blogPostEntry => (
-			<div class="link-tab">
-				<a href={`./blog/${blogPostEntry.slug}`}>{blogPostEntry.data.title}</a>
-			</div>
+                <div class="tab-holder">
+                    <span class="link-side">
+                        
+                    </span>
+                    <div class="link-tab">
+                        <a href={`./blog/${blogPostEntry.slug}`}>{blogPostEntry.data.title}</a>
+                    </div>
+                    <span class="link-side">
+
+                    </span>
+                </div>
 			))
 		}
 	</center>
