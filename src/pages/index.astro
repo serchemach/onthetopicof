@@ -14,18 +14,22 @@ allBlogPosts.sort((a, b) => b.data.date - a.data.date);
 
 <style>
     .link-tab {
-        margin: 20px;
+        margin: 5px;
+        width: fit-content;
+        transition: 0.3s;
+        padding: 10px;
     }
 
     .link-tab > a {
         color: black;
-        transition: 0.3s;
         font-size: large;
-        padding: 10px;
     }
 
-    .link-tab > a:hover {
+    .link-tab:hover {
         background-color: gray;
+    }
+
+    .link-tab:hover > a {
         color: white;
     }
 

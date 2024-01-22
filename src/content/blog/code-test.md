@@ -29,3 +29,5 @@ I will try to improve it, although the main goal of making this blog was to make
 | <img src="https://i.stack.imgur.com/NEext.jpg" alt="drawing" style="max-width:300px"/> |
 |:--:| 
 | *Space* |
+
+$$ F_u = c^k $$

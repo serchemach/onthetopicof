@@ -2,7 +2,7 @@
 title: Let's try to use recurrent self-organising maps!
 date: 2024-01-22
 ---
-I guess, for now this will be a stub with some research materials. 
+I guess, for now, this will be a stub with some research materials. 
 
 I will try to update it with new sources and some actual content as I go along with my work. 
 
@@ -17,4 +17,4 @@ Luckly, there are some existing implementations:
 - [somber (Somber Organizes Maps By Enabling Recurrence)](https://github.com/stephantul/somber)
 
 Of course, we can't forget the basics/classics:
-- [Self-Organizing Maps book by Teuvo Kohonen himself](https://link.springer.com/book/10.1007/978-3-642-56927-2)
+- [Self-Organizing Maps book by Teuvo Kohonen himself!](https://link.springer.com/book/10.1007/978-3-642-56927-2)
