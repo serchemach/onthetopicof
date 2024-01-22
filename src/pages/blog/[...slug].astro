@@ -32,7 +32,7 @@ const { Content } = await entry.render();
     <div style="width: 90%">
       <div>
         <h2>{entry.data.title}</h2>
-        <h6>{entry.data.date}</h6>
+        <h5>{entry.data.date.toISOString().split('T')[0]}</h6>
       </div>
       <Content />
     </div>
