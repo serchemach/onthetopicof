@@ -8,6 +8,10 @@ const allBlogPosts = await getCollection('blog');
 allBlogPosts.sort((a, b) => b.data.date - a.data.date);
 ---
 
+<head>
+    <title>Home</title>
+</head>
+
 <style>
     .link-tab {
         margin: 20px;

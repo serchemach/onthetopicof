@@ -14,6 +14,10 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
+<head>
+  <title>{entry.data.title}</title>
+</head>
+
 <style>
   .content-container {
     display: flex;
