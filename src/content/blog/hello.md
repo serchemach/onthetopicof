@@ -1,5 +1,6 @@
 ---
 title: Hello World!
+date: 2024-01-20
 ---
 
 Hi!, this is a hello post! 
