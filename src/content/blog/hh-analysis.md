@@ -72,4 +72,44 @@ Now, to the actual fun stuff (pictures)!
 
 First, I had to verify the unfortunate aspect of swe jobs - the lack of entry level positions. Which, obviously, holds true for my country as well:
 
+![Unfortunate...](./hh-analysis/experience_distribution.png)
 
+From this chart, we can see that the vast majority of jobs requires either 1 to 3 year of experience or 3 to 6. 
+This is, of course, good for people with *some* experience in commercial swe, but for someone like me... it's pretty depressing.
+
+So, now, let's see what skills are in demand among all experience levels:
+
+![Unfortunate...](./hh-analysis/overall_skills.png)
+
+It seems that SQL is quite popular as a requirement among the postings, along with java... and 1C.
+
+We have to talk about 1C, because it was quite an outlier among other skills.
+You see, I also did one more chart for skills, which didn't consider how many postings had a skill in it, but how many postings had the same skill distribution. And the chart was... bewildering for me:
+
+![Unfortunate...](./hh-analysis/skill_groups.png)
+
+As we can see, there is a **STAGGERING** amount of job postings that **ONLY** require people to have the knowledge of 1C software. 
+
+At first, I thought that this was some kind of mistake on my part, but after checking out a few vacancies, it seems to be true.
+
+
+Since we want to see what is required of a person with no experience, let's see the skill demands:
+
+![Unfortunate...](./hh-analysis/skill_distribution_no_bitches.png)
+
+They are honestly not entirely different from general ones, aside from a big skew towards 1C jobs, which would make sense, since only people as desperate as interns would work with their software.
+
+And loking at skill groups:
+
+![Unfortunate...](./hh-analysis/skill_groups_no_bitches.png)
+
+... Yeah, it's the same (not really surprising).
+
+### Conclusion and some thoughts
+With the surprising prevalence of java among the no experience job postings, it seems to be a decent choice of a language to learn, along with basics like SQL and Git.
+
+To be honest, not very surprising, since I saw a this stuff a lot in job postings regardless.
+
+On the further note, it would be more interesting to see the distribution of skills on **APPLICATION(RESUMES)** and then correlate them with the figures we got for job postings. It may give some rough estimate of jobs that have a lot of demand, but not a lot of supply (I would guess they are mostly 1C related...)
+
+But I've grown a bit tired of this small project for now (and have other stuff to do), so maybe I will do this in the future.
