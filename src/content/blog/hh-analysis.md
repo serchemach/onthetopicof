@@ -28,7 +28,7 @@ I'm won't go too in depth on the intricacies of the API (primarily, because I my
 |  GET   | _/vacancies/{vacancy_id}_ | This endpoint gives us detailed information about a vacancy       |
 
 Everything seems fine, until we read the documentation of _/vacancies_ endpoint:
-| ![Unfortunate...](../../../public/get_vacancy.png) |
+| ![Unfortunate...](./hh-analysis/get_vacancy.png) |
 | :------------------------------------------------: |
 |              _Developers be damned!_               |
 
@@ -47,7 +47,7 @@ Thankfully, there is a feature that will save our endeavor: you can specify the 
 By using binary search and shrinking the period until we get under 2000 vacancies and then shifting the start of the period forward, we can fetch all of the vacancies we want, essentially sidestepping the limitation (at the cost of some additional requests).
 
 I'm not sure if my explanation was the clearest, but in the end we get the following code:
-|    ![Unfortunate...](../../../public/vacancy_fetch.png)    |
+|    ![Unfortunate...](./hh-analysis/vacancy_fetch.png)    |
 | :--------------------------------------------------------: |
 | _It may not be the most elegant solution, but it works..._ |
 
@@ -59,8 +59,17 @@ Before we start processing the data, let's see what data we have in our hands.
 
 Here is a sample of our data:
 
-![Unfortunate...](../../../public/vacancy_sample.png)
+![Unfortunate...](./hh-analysis/vacancy_sample.png)
 
 ### Actual processing and analysis
-To be continued...
+I have to preface the following sections with the fact that I know nothing about data analysis and was just curious to see the most popular tech in my job market (to maybe get some insight into what to learn to actually get a job at last).
+
+But how do we get the key skills of a job posting? I decided to go with the most straightforward solution and assemble a list of 100-ish skills and then just match them against posting descriptions.
+
+And while even I know that this method is far from perfect, for the purposes of my little experiment, it will suffice.
+
+Now, to the actual fun stuff (pictures)! 
+
+First, I had to verify the unfortunate aspect of swe jobs - the lack of entry level positions. Which, obviously, holds true for my country as well:
+
 
